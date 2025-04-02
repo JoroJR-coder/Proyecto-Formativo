@@ -29,7 +29,7 @@ const PersonasTemplate: React.FC = () => {
     queryFn: personaService.getAll,
   });
 
-  const deleteMutation = useMutation({
+  const deleteMutation = useMutation({ // Las mutaciones se manejan en los hooks
     mutationFn: (id: number) => personaService.delete(id),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["personas"] });

@@ -11,7 +11,7 @@ interface Persona {
   fkFicha?: number | null;
 }
 
-const API_URL = 'http://localhost:5000/personas'; 
+const API_URL = 'http://localhost:5000/personas'; //API_URL Aparte, 
 
 const personaService = {
   getAll: async (): Promise<Persona[]> => {

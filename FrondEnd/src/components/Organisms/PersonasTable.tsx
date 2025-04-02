@@ -84,3 +84,18 @@ const PersonasTable: React.FC<PersonasTableProps> = ({
 };
 
 export default PersonasTable;
+
+
+/*
+@Post
+createCars(@Body() body:any){
+return body;
+}
+
+@Delete 
+deleteCars(@Parar('id', ParseIntPipe)id:number){
+return{
+method:
+Delete,
+id}}
+*/
